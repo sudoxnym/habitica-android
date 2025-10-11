@@ -1,0 +1,80 @@
+name: Bug report
+description: Report a reproducible issue in the Habitica Android app.
+title: "[Bug]: "
+labels:
+  - Type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping us improve the Habitica Android app! Please fill out the checklist below so we can investigate quickly.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Describe the bug
+      description: Provide a clear and concise description of the behaviour you observed.
+      placeholder: When I...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the steps we can follow to reproduce the issue reliably.
+      placeholder: |
+        1. Go to ...
+        2. Tap on ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: Tell us what you expected to happen instead.
+      placeholder: I expected...
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or recordings
+      description: Drag and drop images or videos that show the issue, if applicable.
+  - type: markdown
+    attributes:
+      value: "### Environment"
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      description: Your device model (e.g., Pixel 7, Samsung S23).
+      placeholder: Pixel 7
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Android version
+      description: The Android version installed on your device.
+      placeholder: Android 14
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: App version/build
+      description: You can find this under Settings → About in the Habitica app.
+      placeholder: 4.0.0 (1234)
+    validations:
+      required: true
+  - type: input
+    id: username
+    attributes:
+      label: Habitica username
+      description: Optional but helpful for follow-up.
+      placeholder: Username (optional)
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Include crash logs, logcat output, or any other context that might help.

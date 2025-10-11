@@ -1,0 +1,77 @@
+name: Crash report
+description: Report a crash or app freeze in the Habitica Android app.
+title: "[Crash]: "
+labels:
+  - Type: Crash
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a crash. Please include as much detail as possible so we can diagnose the issue.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Describe the crash
+      description: Let us know what happened and what you were doing when the app crashed or froze.
+      placeholder: The app crashed when...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Can you reproduce the crash consistently? If so, list the steps.
+      placeholder: |
+        1. Launch the app
+        2. ...
+        3. Crash occurs
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Crash logs or logcat output
+      description: Paste stack traces or logcat output if available. You can also attach files below the form.
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or screen recording
+      description: Attach any visual evidence that helps us see what happened.
+  - type: markdown
+    attributes:
+      value: "### Environment"
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      description: Your device model (e.g., Pixel 7, Samsung S23).
+      placeholder: Pixel 7
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Android version
+      description: The Android version installed on your device.
+      placeholder: Android 14
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: App version/build
+      description: You can find this under Settings → About in the Habitica app.
+      placeholder: 4.0.0 (1234)
+    validations:
+      required: true
+  - type: input
+    id: username
+    attributes:
+      label: Habitica username
+      description: Optional but helpful for follow-up.
+      placeholder: Username (optional)
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Mention any other details that might help us identify the issue (network conditions, account state, etc.).

@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Habitica Help Desk
+    url: https://habitica.freshdesk.com/support/home
+    about: Account, billing, or other support requests not related to the Android codebase.
+  - name: Feature suggestion portal
+    url: https://forms.gle/Fa6oztkDsbzLqSvE9
+    about: Share high-level product ideas that are not specific to the Android app implementation.

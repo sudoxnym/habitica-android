@@ -1,0 +1,33 @@
+name: Feature request
+description: Suggest an enhancement or new idea for the Habitica Android app.
+title: "[Feature]: "
+labels:
+  - Type: Enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your idea! Before submitting, please confirm the idea has not already been suggested in the issue tracker or the Habitica Trello board.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Describe the solution you'd like
+      description: What problem are you trying to solve and how should the app change?
+      placeholder: I'd like the app to...
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: Explain the problem or user need that this feature will address.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you've considered
+      description: Are there existing features or workarounds that partly address the need?
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context
+      description: Include mockups, references, or other information that helps us understand the request.
